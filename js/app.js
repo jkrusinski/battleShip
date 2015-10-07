@@ -581,7 +581,7 @@ $(document).ready(function () {
         /**
          * @function checkWinner
          * See if the player sunk all of the ships
-         * @return void
+         * @return bool
          */
         checkWinner: function () {
             if(this.shipsSunk == 5) {
@@ -593,7 +593,10 @@ $(document).ready(function () {
                 var msg = "<span style='font-weight: bold; color: green;'>&gt;&gt; YOU WON! Congratulations.</span>\n";
                 $('pre').prepend(msg);
 
+                return true;
             }
+
+            return false;
         }
     };
 
@@ -631,8 +634,11 @@ $(document).ready(function () {
         board.checkCoordinate(row, col, $elClicked);
 
         //check for game over
-        board.checkAmmo();
-        board.checkWinner();
+        if(board.checkWinner()){
+            return;
+        } else {
+            board.checkAmmo();
+        }
 
         //decrement ammunition
         board.ammunition--;
