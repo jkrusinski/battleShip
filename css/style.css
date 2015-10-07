@@ -1,0 +1,48 @@
+body {
+    font-family: monospace;
+    background-color: darkgrey;
+
+}
+
+.panel {
+    background-color: lightgray;
+}
+
+.title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.title h1 {
+    margin: 0;
+    color: whitesmoke;
+    text-shadow: 1px 1px grey;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.center-offset {
+    margin: 5px 0;
+}
+
+.center-offset > div {
+    padding-left: 0;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    /* todo - fix cursor glitch by editing this into bootstrap.min.less file */
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    cursor: inherit;
+    outline: none;
+}
+
+pre {
+    margin-bottom: 0;
+    height: 150px;
+    overflow: scroll;
+}
