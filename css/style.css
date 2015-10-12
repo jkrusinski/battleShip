@@ -46,3 +46,13 @@ pre {
     height: 150px;
     overflow: scroll;
 }
+
+.hidden {
+    display: none;
+}
+
+#is-mobile {
+    margin-top: 30px;
+}
+
+

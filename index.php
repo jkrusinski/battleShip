@@ -11,7 +11,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container">
+<div class="container" id="not-mobile">
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
             <div class="panel panel-default title">
@@ -101,6 +101,46 @@
 
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="container hidden" id="is-mobile">
+    <div class="row">
+        <div class="col-xs-12">
+
+            <div class="panel panel-danger">
+
+                <div class="panel-heading">
+                    <h1 class="panel-title">
+                        Game Not Formatted for Mobile
+                    </h1>
+                </div>
+
+                <div class="panel-body">
+                    <p>Enter your email address to send yourself a link to this page to view battleShip(); on your desktop.</p>
+
+                    <form id="send-link-form">
+
+                        <div class="input-group">
+
+                            <input type="text" id="email" class="form-control" placeholder="Email Address"/>
+
+                            <span class="input-group-btn">
+                                <button type="submit" id="send-link" class="btn btn-default">Send Link</button>
+                            </span>
+
+                        </div>
+
+                        <div class="form-group">
+                            <p id="error" class="text-warning">&nbsp;</p>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
         </div>
     </div>
 </div>
